@@ -453,7 +453,7 @@ int compile(const compile_config &conf) {
     std::string lang = upgraded_lang(conf.lang);
 
     if (lang == "C++" || lang == "C++03") {
-        return compile_cpp(conf, "c++03");
+        return compile_cpp(conf, "c++14");
     } else if (lang == "C++11") {
         return compile_cpp(conf, "c++11");
     } else if (lang == "C++14") {
